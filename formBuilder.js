@@ -3,7 +3,7 @@ BuildForm();
 function BuildForm() {
   const formContainer = document.querySelector(".chemical-form");
 
-  fetch("../data/formFields.json")
+  fetch("./data/formFields.json")
     .then((res) => res.json())
     .then((data) => {
       data.fields.forEach((field) => {
@@ -51,7 +51,7 @@ function BuildForm() {
               fieldObj.style.gridTemplateColumns = field.collumn;
             }
             const selectedCodes = [];
-            fetch("../data/formData.json")
+            fetch("./data/formData.json")
               .then((resData) => resData.json())
               .then((formData) => {
                 const symbols = formData[field.id];
