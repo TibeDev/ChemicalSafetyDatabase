@@ -44,8 +44,8 @@ function BuildForm() {
             fieldObj.id = field.id;
             fieldObj.className =
               field.select === "grid"
-                ? "mutli-select-grid"
-                : "mutli-select-list";
+                ? "multi-select-grid"
+                : "multi-select-list";
 
             if (field.select === "grid" && field.collumn) {
               fieldObj.style.gridTemplateColumns = field.collumn;
@@ -71,8 +71,8 @@ function BuildForm() {
                           (symbols.indexOf(element) >= color.itemsStart &&
                             symbols.indexOf(element) <= color.itemsEnd)
                         ) {
-                          label.style.backgroundColor = color.selectedBgColor;
-                          label.style.borderColor = color.selectedBorderColor;
+                          label.style.backgroundColor = color.bgColor;
+                          label.style.borderColor = color.borderColor;
                         }
                       });
                     } else {
@@ -137,7 +137,7 @@ function BuildForm() {
       const bottemNav = document.createElement("div");
       bottemNav.className = "bottemNav";
       bottemNav.innerHTML = `
-        <button type="submit" id="add-chemical">Add Chemical</button>
+        <button type="submit" onclick="AddChemical()" id="add-chemical">Add Chemical</button>
         <button onclick="CancelChemical()" type="button" id="cancel-form">Cancel</button>
       `;
       formContainer.appendChild(bottemNav);

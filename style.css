@@ -186,7 +186,7 @@ select.field-input {
 /* ============================= */
 /*           Hazards             */
 /* ============================= */
-.mutli-select-grid {
+.multi-select-grid {
   display: grid;
   gap: 1rem;
   border: 1px solid #e5e7eb;
@@ -229,7 +229,7 @@ select.field-input {
 /* ============================= */
 /*         Phrases Selector      */
 /* ============================= */
-.mutli-select-list {
+.multi-select-list {
   border: 1px solid #6b7280;
   scroll-behavior: smooth;
   overflow-y: scroll;
@@ -260,14 +260,14 @@ select.field-input {
   color: #9ca3af;
   font-size: 0.8rem;
 }
-.mutli-select-list label:not(:last-child) {
+.multi-select-list label:not(:last-child) {
   border-bottom: 1px solid #e9e9ed;
 }
 
 /* ============================= */
 /*        Field & Form Inputs    */
 /* ============================= */
-.mutli-select-list,
+.multi-select-list,
 .field-area,
 .hazard,
 .field-input {
@@ -365,9 +365,7 @@ select.field-input {
 
 .chemical-category,
 .chemical-category-extra {
-  padding: 0.3rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0.4rem;
   border-radius: 5px;
   display: flex;
   align-items: center;

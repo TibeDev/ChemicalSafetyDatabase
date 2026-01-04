@@ -71,15 +71,19 @@
       "type": "multi-select",
       "select": "grid",
       "collumn": "auto auto auto",
-      "required": true
+      "required": true,
+      "chemicalDataType": "category",
+      "maxCategoryItems": 3
     },
     {
-      "id": "pbms",
+      "id": "pbms-symbols",
       "label": "PBM's",
       "type": "multi-select",
       "select": "grid",
       "collumn": "auto auto auto",
-      "required": true
+      "required": true,
+      "chemicalDataType": "category",
+      "maxCategoryItems": 3
     },
     {
       "id": "pbm-norms",
@@ -126,7 +130,8 @@
       "label": "CAS-nr",
       "type": "input",
       "input": "text",
-      "required": true
+      "required": true,
+      "chemicalDataType": "sub-title"
     },
     {
       "id": "datum-sds",

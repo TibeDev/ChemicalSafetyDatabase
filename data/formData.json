@@ -48,17 +48,12 @@
   ],
   "ghs-symbols-color": [
     {
-      "selectedBgColor": "rgb(255, 242, 242)",
-      "selectedBorderColor": "red",
+      "bgColor": "rgb(255, 242, 242)",
+      "borderColor": "red",
       "items": "all"
     }
   ],
-  "ghs-symbols-category": [
-    {
-      "bgColor": "rgb(255, 242, 242)"
-    }
-  ],
-  "pbms": [
+  "pbms-symbols": [
     {
       "img": "oogbescherming.png",
       "name": "Oogbescherming",
@@ -105,10 +100,10 @@
       "code": "PBM09"
     }
   ],
-  "pbms-color": [
+  "pbms-symbols-color": [
     {
-      "selectedBgColor": "rgb(242, 245, 255)",
-      "selectedBorderColor": "rgb(22, 54, 135)",
+      "bgColor": "rgb(242, 245, 255)",
+      "borderColor": "rgb(22, 54, 135)",
       "items": "all"
     }
   ],
@@ -196,19 +191,19 @@
   ],
   "h-phrases-color": [
     {
-      "selectedBgColor": "rgb(242, 245, 255)",
+      "bgColor": "rgb(242, 245, 255)",
       "textColor": "red",
       "itemsStart": "0",
       "itemsEnd": "32"
     },
     {
-      "selectedBgColor": "rgb(242, 245, 255)",
+      "bgColor": "rgb(242, 245, 255)",
       "textColor": "green",
       "itemsStart": "33",
       "itemsEnd": "73"
     },
     {
-      "selectedBgColor": "rgb(242, 245, 255)",
+      "bgColor": "rgb(242, 245, 255)",
       "textColor": "blue",
       "itemsStart": "74",
       "itemsEnd": "100"
@@ -305,31 +300,31 @@
   ],
   "p-phrases-color": [
     {
-      "selectedBgColor": "rgb(242, 245, 255)",
+      "bgColor": "rgb(242, 245, 255)",
       "textColor": "red",
       "itemsStart": "0",
       "itemsEnd": "2"
     },
     {
-      "selectedBgColor": "rgb(242, 245, 255)",
+      "bgColor": "rgb(242, 245, 255)",
       "textColor": "green",
       "itemsStart": "3",
       "itemsEnd": "38"
     },
     {
-      "selectedBgColor": "rgb(242, 245, 255)",
+      "bgColor": "rgb(242, 245, 255)",
       "textColor": "blue",
       "itemsStart": "39",
       "itemsEnd": "78"
     },
     {
-      "selectedBgColor": "rgb(242, 245, 255)",
+      "bgColor": "rgb(242, 245, 255)",
       "textColor": "orange",
       "itemsStart": "79",
       "itemsEnd": "85"
     },
     {
-      "selectedBgColor": "rgb(242, 245, 255)",
+      "bgColor": "rgb(242, 245, 255)",
       "textColor": "purple",
       "itemsStart": "86",
       "itemsEnd": "100"
