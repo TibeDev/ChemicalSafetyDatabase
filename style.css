@@ -371,11 +371,6 @@ select.field-input {
   align-items: center;
   justify-content: center;
 }
-
-.chemical-category {
-  background-color: rgb(255, 227, 227);
-  color: rgb(215, 0, 0);
-}
 .chemical-category img{
   width: 2rem;
 }

@@ -70,35 +70,39 @@ function AddChemical(){
                 checkedItems.push(item);
               }
             });
-            checkedItems.forEach((item, index) => {
-              if(index < field.maxCategoryItems){
-                fetch("./data/formFields.json")
-                .then((res) => res.json())
-                .then((data) => { 
-                  
+            fetch("./data/formData.json")
+              .then((res) => res.json())
+              .then((data) => { 
+                const colors = data[field.id + "-color"]
+                  checkedItems.forEach((item, index) => {
+                  if(index < field.maxCategoryItems){
+                    const category = document.createElement("div");
+                    category.className = "chemical-category";
+                    if(colors){
+                      colors.forEach(color => {
+                        category.style.backgroundColor = color.bgColor;
+                      });
+                    }
+                    if(fieldInput.className === "multi-select-grid")
+                    {
+                      const icon = document.createElement("img");
+                      const labelIcon = item.querySelector("img");
+                      icon.src = labelIcon.src;
+                      category.appendChild(icon);
+                    }
+                    else if(fieldInput.className === "multi-select-list"){
+                      const labelText = item.querySelector("p");
+                      category.textContent = labelText.innerHTML;
+                    }
+                    chemicalCategoryList.appendChild(category);
+                  }
+                  else if(index === field.maxCategoryItems){
+                    const categoryExtra = document.createElement("div");
+                    categoryExtra.className = "chemical-category-extra";
+                    categoryExtra.textContent = "+" + (checkedItems.length - field.maxCategoryItems) + " meer";
+                    chemicalCategoryList.appendChild(categoryExtra);
+                  }
                 });
-                const category = document.createElement("div");
-                category.className = "chemical-category";
-                if(fieldInput.className === "multi-select-grid")
-                {
-                  const icon = document.createElement("img");
-                  const labelIcon = item.querySelector("img");
-                  icon.src = labelIcon.src;
-                  category.appendChild(icon);
-                }
-                else if(fieldInput.className === "multi-select-list"){
-                  const labelText = item.querySelector("p");
-                  category.textContent = labelText.innerHTML;
-                }
-                category.style.background = 
-                chemicalCategoryList.appendChild(category);
-              }
-              else if(index === field.maxCategoryItems){
-                const categoryExtra = document.createElement("div");
-                categoryExtra.className = "chemical-category-extra";
-                categoryExtra.textContent = "+" + (checkedItems.length - field.maxCategoryItems) + " meer";
-                chemicalCategoryList.appendChild(categoryExtra);
-              }
             });
           }
         }
