@@ -112,10 +112,8 @@ function AddChemical() {
 }
 function SaveData() {
   const fields = document.querySelectorAll(".field");
-  const form = document.querySelector(".chemical-form");
-  const formData = new FormData(form);
-  const data = Object.fromEntries(formData);
-  fetch("https://reqres.in/api/users", {
+
+  fetch("https://jsonplaceholder.typicode.com/posts", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
